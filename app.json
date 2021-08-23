@@ -1,6 +1,6 @@
 {
   "scripts":  {
-    "postdeploy": "bundle exec db:schema:load"
+    "postdeploy": "bundle exec rails db:schema:load"
   },
   "addons": [
     "heroku-postgresql:standard-0"
