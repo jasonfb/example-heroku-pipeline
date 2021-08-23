@@ -55,7 +55,7 @@ git add release-tasks.sh
 git commit -m "Make release-tasks.sh executable"
 ```
 
-This file contains:
+`release-tasks.yml` should contain:
 
 ```
 bundle exec rails db:migrate
@@ -63,15 +63,13 @@ bundle exec rails db:migrate
 
 If you are using data migrations, you can use
 
-
-
 ```
 bundle exec rails db:migrate && bundle exec rails data:migrate
 ```
 
-In this file you should:
-• Running database schema migrations
-• Data migrations
+Additionally, in this file you should:
+• Running database schema migrations (shown)
+• Data migrations (shown example #2)
 • Sending CSS, JS, and other assets from your app’s slug to a CDN or S3 bucket
 • Priming or invalidating cache stores
 
