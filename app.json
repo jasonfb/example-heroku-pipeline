@@ -6,6 +6,14 @@
     "heroku-postgresql:standard-0"
   ],
   "environments": {
+    "test": {
+      "formation": {
+        "test": {
+          "quantity": 1,
+          "size": "standard-2x"
+        }
+      }
+    },
     "review": {
       "addons": [
         "heroku-postgresql:hobby-dev"
